@@ -19,7 +19,8 @@ public class DashBoardFormController {
     public void updateLaptopOnAction(ActionEvent actionEvent) {
     }
 
-    public void deleteLaptopOnAction(ActionEvent actionEvent) {
+    public void deleteLaptopOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("DeleteLaptopForm");
     }
 
     public void loadAllaptopOnAction(ActionEvent actionEvent) {
