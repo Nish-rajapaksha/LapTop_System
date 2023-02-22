@@ -13,7 +13,8 @@ public class DashBoardFormController {
         setUi("SaveLaptopForm");
     }
 
-    public void searchLaptopOnAction(ActionEvent actionEvent) {
+    public void searchLaptopOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("SearchLaptopForm");
     }
 
     public void updateLaptopOnAction(ActionEvent actionEvent) {
