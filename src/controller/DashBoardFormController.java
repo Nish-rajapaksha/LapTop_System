@@ -25,7 +25,8 @@ public class DashBoardFormController {
         setUi("DeleteLaptopForm");
     }
 
-    public void loadAllaptopOnAction(ActionEvent actionEvent) {
+    public void loadAllaptopOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("LoadAllLaptopForm");
     }
     private void setUi(String URI) throws IOException {
         Parent parent  = FXMLLoader.load(getClass().getResource("../views/"+URI+".fxml"));
