@@ -16,7 +16,7 @@ public class DeleteLaptopFormController {
 
     public void txtSearchOnAction(ActionEvent actionEvent) {
         try{
-            if (CrudUtil.execute("DELETE FROM LaptopA WHERE id=?",txtId.getText())){
+            if (CrudUtil.execute("DELETE FROM LaptopA WHERE LapID=?",txtId.getText())){
                 new Alert(Alert.AlertType.CONFIRMATION, "Deleted!").show();
             }else{
                 new Alert(Alert.AlertType.WARNING, "Try Again!").show();
@@ -29,7 +29,7 @@ public class DeleteLaptopFormController {
 
     public void btnDeleteOnAction(ActionEvent actionEvent) {
         try {
-            ResultSet result = CrudUtil.execute("SELECT * FROM LaptopA WHERE id=?",txtId.getText());
+            ResultSet result = CrudUtil.execute("SELECT * FROM LaptopA WHERE LapID=?",txtId.getText());
             if (result.next()) {
                 txtName.setText(result.getString(2));
                 txtBrand.setText(result.getString(3));

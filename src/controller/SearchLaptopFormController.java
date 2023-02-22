@@ -30,7 +30,7 @@ public class SearchLaptopFormController {
         }
     }
     private void search() throws ClassNotFoundException, SQLException {
-        ResultSet result = CrudUtil.execute("SELECT * FROM LaptopA WHERE id=?",txtId.getText());
+        ResultSet result = CrudUtil.execute("SELECT * FROM LaptopA WHERE LapID=?",txtId.getText());
         if (result.next()) {
             txtName.setText(result.getString(2));
             txtBrand.setText(result.getString(3));

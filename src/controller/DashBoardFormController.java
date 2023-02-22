@@ -17,7 +17,8 @@ public class DashBoardFormController {
         setUi("SearchLaptopForm");
     }
 
-    public void updateLaptopOnAction(ActionEvent actionEvent) {
+    public void updateLaptopOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("UpdateLaptopForm");
     }
 
     public void deleteLaptopOnAction(ActionEvent actionEvent) throws IOException {
